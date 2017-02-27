@@ -67,7 +67,12 @@ mary = Broodmare.create(name: "Mary", age: 11, color: "brown", registry_tattoo: 
 
 
 
+<<<<<<< HEAD
 
 
 
     ###############################################################################
+=======
+#foals
+#for each foal we need id, sex, color, markings, foaling_date, foaling_location
+>>>>>>> 67dcdd3688e810e950e85f8d225ebb4e749dbde1
