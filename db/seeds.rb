@@ -62,17 +62,3 @@ mary = Broodmare.create(name: "Mary", age: 11, color: "brown", registry_tattoo: 
                   # create_table :foals do |t| #   t.string :sex #   t.date :foaling_date #   t.string :color #   t.string :markings #   t.string :birthplace #   t.integer   :broodmare_id                               # GIRO:  CHANGED THIS AFTER CONVO W ADRIAN #   # t.references :house, null: false, index:true      # GIRO:  ORIG LINE #   # t.references :post, index: true, foreign_key: true #   t.timestamps
 # foal_201702270000L = Foal.create(sex: 'm', foaling_date: '20160909', color: 'bay', markings: 'white sock left foreleg', birthplace: 'texas', broodmare_id: 1)
 # foal_201702270000L = Foal.create(sex: 'm', foaling_date: now(), color: 'bay', markings: 'red sock left foreleg', birthplace: 'texas', broodmare_id: 1)
-
-
-
-
-
-<<<<<<< HEAD
-
-
-
-    ###############################################################################
-=======
-#foals
-#for each foal we need id, sex, color, markings, foaling_date, foaling_location
->>>>>>> 67dcdd3688e810e950e85f8d225ebb4e749dbde1
