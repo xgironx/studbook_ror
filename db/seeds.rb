@@ -55,7 +55,8 @@ curlin = Stallion.create(name:"Curlin", age:"13", color:"ch", registry_tattoo:"H
                   # mary = Broodmare.create(name: "Mary", age: 11, color: "brown", registry_tattoo: "A11111", link_to_pedigree: "my_link_to_my_pedigree", barren: false, num_foals: 3, in_foal_now: false, expected_foaling_date: "20170227")
                   # mary = Broodmare.create(name: "Mary", age: 11, color: "brown", registry_tattoo: "A11111", link_to_pedigree: "my_link_to_my_pedigree", barren: false, num_foals: 3, in_foal_now: false, expected_foaling_date: "2017-02-27 16:23:26.198369")
                   # mary = Broodmare.create(name: "Mary", age: 11, color: "brown", registry_tattoo: "A11111", link_to_pedigree: "my_link_to_my_pedigree", barren: false, num_foals: 3, in_foal_now: false, expected_foaling_date: "2017-02-27")
-mary = Broodmare.create(name: "Mary", age: 11, color: "brown", registry_tattoo: "A11111", link_to_pedigree: "my_link_to_my_pedigree", barren: false, num_foals: 3, in_foal_now: false, expected_foaling_date: "02-27-2017")
+                  # mary = Broodmare.create(name: "Mary", age: "11", color: "brown", registry_tattoo: "A11111", link_to_pedigree: "my_link_to_my_pedigree", barren: false, num_foals: "3", in_foal_now: false, expected_foaling_date: "02-27-2017")
+                  mary = Broodmare.create(name: "Mary", age: "11", color: "brown", registry_tattoo: "A11111", link_to_pedigree: "my_link_to_my_pedigree", barren: "false", num_foals: "3", in_foal_now: "false", expected_foaling_date: "02-27-2017")
 
     ###############################################################################
                   # FOALS
