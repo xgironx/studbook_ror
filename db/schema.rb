@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170226181252) do
+ActiveRecord::Schema.define(version: 20170227155444) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "broodmares", force: :cascade do |t|
+    t.string   "name",                  null: false
+    t.integer  "age"
+    t.string   "color"
+    t.string   "registry_tattoo"
+    t.string   "link_to_pedigree"
+    t.boolean  "barren"
+    t.integer  "num_foals"
+    t.boolean  "in_foal_now"
+    t.date     "expected_foaling_date"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
 
   create_table "foals", force: :cascade do |t|
     t.string   "sex"
@@ -22,22 +36,9 @@ ActiveRecord::Schema.define(version: 20170226181252) do
     t.string   "markings"
     t.string   "birthplace"
     t.integer  "stallion_id"
-    t.integer  "mare_id"
+    t.integer  "broodmare_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-  end
-
-  create_table "mares", force: :cascade do |t|
-    t.string   "name",             null: false
-    t.integer  "age"
-    t.string   "color"
-    t.string   "registry_tattoo"
-    t.string   "link_to_pedigree"
-    t.boolean  "barren"
-    t.integer  "num_foals"
-    t.boolean  "in_foal_now"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
   end
 
   create_table "stallions", force: :cascade do |t|
@@ -45,10 +46,10 @@ ActiveRecord::Schema.define(version: 20170226181252) do
     t.integer  "age"
     t.string   "color"
     t.string   "registry_tattoo"
+    t.string   "link_to_pedigree"
     t.integer  "stud_fee"
     t.decimal  "stakes_winner_progeny"
     t.string   "img_url"
-    t.string   "link_to_pedigree"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
   end

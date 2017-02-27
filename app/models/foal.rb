@@ -1,4 +1,3 @@
 class Foal < ActiveRecord::Base
-belongs_to :stallions
-belongs_to :mares
+belongs_to :broodmares
 end
