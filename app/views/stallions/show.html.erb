@@ -1,0 +1,16 @@
+
+
+<h1><%= @stallion.name %></h1>
+
+    <% @stallion.broodmares.each do |broodmare| %>
+
+    <!-- <div class="broodmare"> -->
+      <div class="broodmare">
+
+            <h2><%= broodmare.name %></h2>
+
+            <%= image_tag (broodmare.img_url) %>
+
+        </div>
+
+    <% end %>

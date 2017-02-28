@@ -1,3 +1,3 @@
 class Stallion < ActiveRecord::Base
-  has_many :foals, dependent: :destroy
+  has_many :broodmares, dependent: :destroy
 end

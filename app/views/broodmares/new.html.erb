@@ -1,0 +1,15 @@
+<h1>Enter a New Broodmare!</h1>
+
+<%= form_for @broodmare do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :img_url %>
+<%= f.text_field :img_url %>
+
+<%= f.label :stallion_id %>
+<%= f.text_field :stallion_id %>
+
+<%= f.submit "Submit" %>
+<% end %>

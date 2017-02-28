@@ -1,0 +1,21 @@
+        -- #############################################
+        -- # 201702221638L     EL MARTES   GIRO
+        -- # create_table "broodmares", force   cascade do |t|
+        -- #   t.string   "name",                  null  false
+        -- #   t.integer  "age"
+        -- #   t.string   "color"
+        -- #   t.string   "registry_tattoo"
+        -- #   t.string   "link_to_pedigree"
+        -- #   t.boolean  "barren"
+        -- #   t.integer  "num_foals"
+        -- #   t.boolean  "in_foal_now"
+        -- #   t.date     "expected_foaling_date"
+        -- #   t.datetime "created_at",            null  false
+        -- #   t.datetime "updated_at",            null  false
+        -- # end
+        --           # mary = Broodmare.create(name  "Mary", age  11, color  "brown", registry_tattoo  "A11111", link_to_pedigree  "my_link_to_my_pedigree", barren  false, num_foals  3, in_foal_now  false, expected_foaling_date  "20170227")
+        --           # mary = Broodmare.create(name  "Mary", age  11, color  "brown", registry_tattoo  "A11111", link_to_pedigree  "my_link_to_my_pedigree", barren  false, num_foals  3, in_foal_now  false, expected_foaling_date  "2017-02-27 16 23 26.198369")
+        --           # mary = Broodmare.create(name  "Mary", age  11, color  "brown", registry_tattoo  "A11111", link_to_pedigree  "my_link_to_my_pedigree", barren  false, num_foals  3, in_foal_now  false, expected_foaling_date  "2017-02-27")
+        --           # mary = Broodmare.create(name  "Mary", age  "11", color  "brown", registry_tattoo  "A11111", link_to_pedigree  "my_link_to_my_pedigree", barren  false, num_foals  "3", in_foal_now  false, expected_foaling_date  "02-27-2017")
+insert into broodmares (name, age, color, registry_tattoo, link_to_pedigree, barren, num_foals, in_foal_now, expected_foaling_date, created_at, updated_at) values (  'Mary',   11,   'brown',   'A11111',   'my_link_to_my_pedigree',   false,   3,   false,   '02-27-2017', now(), now());
+commit
