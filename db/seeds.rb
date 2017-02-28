@@ -14,7 +14,7 @@
         ###############################################################################
         #need to create seeds for stallions, broodmares, and foals
 
-<<<<<<< HEAD
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -151,4 +151,3 @@ foaly = Foal.create(sex: "filly", foaling_date: "11-11-2018", color: "bay", mark
 foaly = Foal.create(sex: "colt", foaling_date: "20221122", color: "bay", markings: "white sock left foreleg", birthplace: "texas", broodmare_id: 2)
 foaly = Foal.create(sex: "colt", foaling_date: "25250525", color: "bay", markings: "white sock left foreleg", birthplace: "texas", broodmare_id: 3)
 # # foal_201702270000L = Foal.create(sex: 'm', foaling_date: now(), color: 'bay', markings: 'red sock left foreleg', birthplace: 'texas', broodmare_id: 1)
->>>>>>> 54bdfda5cc746f08a0e7b4d7198502cde8b23810
