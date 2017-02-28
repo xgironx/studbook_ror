@@ -20,25 +20,27 @@ ActiveRecord::Schema.define(version: 20170227155444) do
     t.integer  "age"
     t.string   "color"
     t.string   "registry_tattoo"
-    t.string   "link_to_pedigree"
     t.boolean  "barren"
     t.integer  "num_foals"
     t.boolean  "in_foal_now"
     t.date     "expected_foaling_date"
+    t.string   "img_url"
+    t.string   "link_to_pedigree_url"
+    t.integer  "stallion_id"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
   end
 
   create_table "foals", force: :cascade do |t|
+    t.string   "nom_de_muerre"
     t.string   "sex"
     t.date     "foaling_date"
     t.string   "color"
     t.string   "markings"
     t.string   "birthplace"
-    t.integer  "stallion_id"
     t.integer  "broodmare_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "stallions", force: :cascade do |t|
@@ -46,10 +48,10 @@ ActiveRecord::Schema.define(version: 20170227155444) do
     t.integer  "age"
     t.string   "color"
     t.string   "registry_tattoo"
-    t.string   "link_to_pedigree"
     t.integer  "stud_fee"
     t.decimal  "stakes_winner_progeny"
     t.string   "img_url"
+    t.string   "link_to_pedigree_url"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
   end

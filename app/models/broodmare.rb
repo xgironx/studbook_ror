@@ -1,4 +1,4 @@
 class Broodmare < ActiveRecord::Base
-  belongs_to :stallions
+  belongs_to :stallion
   has_many :foals, dependent: :destroy
 end
