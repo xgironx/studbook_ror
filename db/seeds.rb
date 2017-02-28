@@ -55,28 +55,28 @@ curlin = Stallion.create(name:"Curlin", age:"13", color:"ch", registry_tattoo:"H
 #for each broodmare we need name, age, color, registry_tattoo, barren, num_foals,link_to_pedigree_url
 #   expected_foaling_date
 #Unrivaled Belle -- put her in foal to Tapit
-unrivaled_belle = Mare.create(name:"Unrivaled Belle", age:"11", color:"gr/r", registry_tattoo:"J46464", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/unrivaled+belle", expected_foaling_date:"20170422", stallion_id: 1)
+unrivaled_belle = Broodmare.create(name:"Unrivaled Belle", age:"11", color:"gr/r", registry_tattoo:"J46464", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/unrivaled+belle", expected_foaling_date:"20170422", stallion_id: 1)
 
 #Free spin in foal to Tapit
-free_spin = Mare.create(name:"Free Spin", age:"19", color:"b", registry_tattoo:"B34646", barren:false, num_foals:"6",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/free+spin", expected_foaling_date:"20170422", stallion_id: 1)
+free_spin = Broodmare.create(name:"Free Spin", age:"19", color:"b", registry_tattoo:"B34646", barren:false, num_foals:"6",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/free+spin", expected_foaling_date:"20170422", stallion_id: 1)
 
 #Zenyatta in foal to Medaglia D'Oro
-zenyatta = Mare.create(name:"Zenyatta", age:"13", color:"dkb/br", registry_tattoo:"H23464", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/zenyatta", expected_foaling_date:"20180222", stallion_id: 1)
+zenyatta = Broodmare.create(name:"Zenyatta", age:"13", color:"dkb/br", registry_tattoo:"H23464", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/zenyatta", expected_foaling_date:"20180222", stallion_id: 1)
 
 #Zenyatta in foal to Medaglia D'Oro
-ivanavinalot = Mare.create(name:"Ivanavinalot", age:"17", color:"b", registry_tattoo:"D23411", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/ivanavinalot", expected_foaling_date:"20180215", stallion_id: 1)
+ivanavinalot = Broodmare.create(name:"Ivanavinalot", age:"17", color:"b", registry_tattoo:"D23411", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/ivanavinalot", expected_foaling_date:"20180215", stallion_id: 1)
 
 #Evening Star in foal to Curlin
-evening_star = Mare.create(name:"Evening Star", age:"11", color:"b", registry_tattoo:"J28411", barren:false, num_foals:"1",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/evening+star19", expected_foaling_date:"20180115", stallion_id: 1)
+evening_star = Broodmare.create(name:"Evening Star", age:"11", color:"b", registry_tattoo:"J28411", barren:false, num_foals:"1",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/evening+star19", expected_foaling_date:"20180115", stallion_id: 1)
 
 #Goldfield in foal to Curlin
-goldfield = Mare.create(name:"Goldfield", age:"9", color:"b", registry_tattoo:"L19411", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/goldfield9", expected_foaling_date:"20180115", stallion_id: 1)
+goldfield = Broodmare.create(name:"Goldfield", age:"9", color:"b", registry_tattoo:"L19411", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/goldfield9", expected_foaling_date:"20180115", stallion_id: 1)
 
 #Medium of Letters in foal to High Cotton
-medium_of_letters = Mare.create(name:"Medium of Letters", age:"14", color:"b", registry_tattoo:"G13311", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/medium+of+letters2", expected_foaling_date:"20180315", stallion_id: 1)
+medium_of_letters = Broodmare.create(name:"Medium of Letters", age:"14", color:"b", registry_tattoo:"G13311", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/medium+of+letters2", expected_foaling_date:"20180315", stallion_id: 1)
 
 #Send For An Angel in foal to High Cotton
-send_for_an_angel = Mare.create(name:"Send For An Angel", age:"16", color:"dkb/br", registry_tattoo:"E23911", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/send+for+an+angel", expected_foaling_date:"20180131", stallion_id: 1)
+send_for_an_angel = Broodmare.create(name:"Send For An Angel", age:"16", color:"dkb/br", registry_tattoo:"E23911", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/send+for+an+angel", expected_foaling_date:"20180131", stallion_id: 1)
 
 
 #     ###############################################################################
