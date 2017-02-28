@@ -14,16 +14,10 @@
         ###############################################################################
         #need to create seeds for stallions, broodmares, and foals
 
+Stallion.destroy_all
+Broodmare.destroy_all
+Foal.destroy_all
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
-#need to create seeds for stallions, broodmares, and foals
 
 #stallions:
 # Tapit, Medaglia D'Oro, High Cotton, Afleet Alex, Temple City, Giant's Causeway,
@@ -55,28 +49,28 @@ curlin = Stallion.create(name:"Curlin", age:"13", color:"ch", registry_tattoo:"H
 #for each broodmare we need name, age, color, registry_tattoo, barren, num_foals,link_to_pedigree_url
 #   expected_foaling_date
 #Unrivaled Belle -- put her in foal to Tapit
-unrivaled_belle = Broodmare.create(name:"Unrivaled Belle", age:"11", color:"gr/r", registry_tattoo:"J46464", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/unrivaled+belle", expected_foaling_date:"20170422", stallion_id: 1)
+unrivaled_belle = Broodmare.create(name:"Unrivaled Belle", age:"11", color:"gr/r", registry_tattoo:"J46464", barren:false, num_foals:"4",  in_foal_now: true, img_url: "https://s-media-cache-ak0.pinimg.com/736x/dc/55/7d/dc557dbef3c1d1817051ad04582778c7.jpg", link_to_pedigree_url:"http://www.pedigreequery.com/unrivaled+belle", expected_foaling_date:"20170422", stallion_id: 1)
 
 #Free spin in foal to Tapit
-free_spin = Broodmare.create(name:"Free Spin", age:"19", color:"b", registry_tattoo:"B34646", barren:false, num_foals:"6",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/free+spin", expected_foaling_date:"20170422", stallion_id: 1)
+free_spin = Broodmare.create(name:"Free Spin", age:"19", color:"b", registry_tattoo:"B34646", barren:false, num_foals:"6",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/free+spin", expected_foaling_date:"20170422", stallion_id: 2)
 
 #Zenyatta in foal to Medaglia D'Oro
-zenyatta = Broodmare.create(name:"Zenyatta", age:"13", color:"dkb/br", registry_tattoo:"H23464", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/zenyatta", expected_foaling_date:"20180222", stallion_id: 1)
+zenyatta = Broodmare.create(name:"Zenyatta", age:"13", color:"dkb/br", registry_tattoo:"H23464", barren:false, num_foals:"4",  in_foal_now: true, img_url: "https://s-media-cache-ak0.pinimg.com/736x/dc/55/7d/dc557dbef3c1d1817051ad04582778c7.jpg", link_to_pedigree_url:"http://www.pedigreequery.com/zenyatta", expected_foaling_date:"20180222", stallion_id: 3)
 
 #Zenyatta in foal to Medaglia D'Oro
-ivanavinalot = Broodmare.create(name:"Ivanavinalot", age:"17", color:"b", registry_tattoo:"D23411", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/ivanavinalot", expected_foaling_date:"20180215", stallion_id: 1)
+ivanavinalot = Broodmare.create(name:"Ivanavinalot", age:"17", color:"b", registry_tattoo:"D23411", barren:false, num_foals:"4",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/ivanavinalot", expected_foaling_date:"20180215", stallion_id: 4)
 
 #Evening Star in foal to Curlin
-evening_star = Broodmare.create(name:"Evening Star", age:"11", color:"b", registry_tattoo:"J28411", barren:false, num_foals:"1",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/evening+star19", expected_foaling_date:"20180115", stallion_id: 1)
+evening_star = Broodmare.create(name:"Evening Star", age:"11", color:"b", registry_tattoo:"J28411", barren:false, num_foals:"1",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/evening+star19", expected_foaling_date:"20180115", stallion_id: 5)
 
 #Goldfield in foal to Curlin
-goldfield = Broodmare.create(name:"Goldfield", age:"9", color:"b", registry_tattoo:"L19411", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/goldfield9", expected_foaling_date:"20180115", stallion_id: 1)
+goldfield = Broodmare.create(name:"Goldfield", age:"9", color:"b", registry_tattoo:"L19411", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/goldfield9", expected_foaling_date:"20180115", stallion_id: 6)
 
 #Medium of Letters in foal to High Cotton
-medium_of_letters = Broodmare.create(name:"Medium of Letters", age:"14", color:"b", registry_tattoo:"G13311", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/medium+of+letters2", expected_foaling_date:"20180315", stallion_id: 1)
+medium_of_letters = Broodmare.create(name:"Medium of Letters", age:"14", color:"b", registry_tattoo:"G13311", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/medium+of+letters2", expected_foaling_date:"20180315", stallion_id: 7)
 
 #Send For An Angel in foal to High Cotton
-send_for_an_angel = Broodmare.create(name:"Send For An Angel", age:"16", color:"dkb/br", registry_tattoo:"E23911", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/send+for+an+angel", expected_foaling_date:"20180131", stallion_id: 1)
+send_for_an_angel = Broodmare.create(name:"Send For An Angel", age:"16", color:"dkb/br", registry_tattoo:"E23911", barren:false, num_foals:"2",  in_foal_now: true, link_to_pedigree_url:"http://www.pedigreequery.com/send+for+an+angel", expected_foaling_date:"20180131", stallion_id: 9)
 
 
 #     ###############################################################################
@@ -86,3 +80,5 @@ foaly = Foal.create(sex: "filly", foaling_date: "11-11-2018", color: "bay", mark
 foaly = Foal.create(sex: "colt", foaling_date: "20221122", color: "bay", markings: "white sock left foreleg", birthplace: "texas", broodmare_id: 2)
 foaly = Foal.create(sex: "colt", foaling_date: "25250525", color: "bay", markings: "white sock left foreleg", birthplace: "texas", broodmare_id: 3)
 # # foal_201702270000L = Foal.create(sex: 'm', foaling_date: now(), color: 'bay', markings: 'red sock left foreleg', birthplace: 'texas', broodmare_id: 1)
+
+p "created #{Stallion.count} stallions"

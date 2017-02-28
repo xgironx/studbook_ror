@@ -3,3 +3,11 @@
 <h2><%= @broodmare.stallion.name %></h2>
 
 <p> <%= @broodmare.name %> <%= link_to "(edit)", edit_broodmare_path(@broodmare) %></p>
+
+<div class="broodmare">
+
+      <h2><%= @broodmare.name %></h2>
+
+      <%= image_tag (@broodmare.img_url) %>
+
+  </div>
