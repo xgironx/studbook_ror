@@ -1,21 +1,28 @@
 <h2>I just want him to be a little different ... you know, mine!</h2>
 
 <%= form_for @foal, method: :put do |f| %>
-
     <%= f.label :nom_de_muerre %>
     <%= f.text_field :nom_de_muerre %>
+    <br>
 
     <%= f.label :broodmare_id %>
     <%= f.text_field :broodmare_id %>
+    <br>
 
-    <%= f.label :foaling_date %>
-    <%= f.text_field :foaling_date %>
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+    <br>
+
+    <%= f.label :markings %>
+    <%= f.text_field :markings %>
+    <br>
 
     <%= f.submit "Change my horsey, NOW!" %>
-
 <%  end %>
 
+    <br>
+    <br>
 
-<%= form_for @foal, method: :delete do |f| %>
-    <%= f.submit "He went rafting with Tom Sawyer :o(" %>
-<% end %>
+    <%= form_for @foal, method: :delete do |f| %>
+        <%= f.submit "My horsey went rafting with Tom Sawyer :o( delete him, i guess" %>
+    <% end %>

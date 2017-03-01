@@ -80,9 +80,9 @@ send_for_an_angel = Broodmare.create(name:"Send For An Angel", age:"16", color:"
                   # FOALS
                   # create_table :foals do |t| #   t.string :sex #   t.date :foaling_date #   t.string :color #   t.string :markings #   t.string :birthplace #   t.integer   :broodmare_id                               # GIRO:  CHANGED THIS AFTER CONVO W ADRIAN #   # t.references :house, null: false, index:true      # GIRO:  ORIG LINE #   # t.references :post, index: true, foreign_key: true #   t.timestamps
                   # foaly = Foal.create(nom_de_muerre: now(), sex: "filly", foaling_date: "11-11-2018", color: "bay", markings: "white sock left foreleg", birthplace: "texas", broodmare_id: 1)
-foaly = Foal.create(nom_de_muerre: 'bubba', sex: "filly", foaling_date: "11-11-2018", color: "bay", markings: "white sock left foreleg", birthplace: "texas", broodmare_id: 1)
-foaly = Foal.create(nom_de_muerre: 'rex', sex: "colt", foaling_date: "20221122", color: "bay", markings: "white sock left foreleg", birthplace: "virginia", broodmare_id: 2)
-foaly = Foal.create(nom_de_muerre: 'jim-bob', sex: "colt", foaling_date: "25250525", color: "bay", markings: "white sock left foreleg", birthplace: "cackalacki", broodmare_id: 3)
+foaly = Foal.create(nom_de_muerre: 'bubba', sex: "filly", foaling_date: "11-11-2018", color: "bay", markings: "white sock left foreleg", birthplace: "texas", img_url: "https://s-media-cache-ak0.pinimg.com/564x/bd/66/d5/bd66d5fcaaaee27f7f07356ef0d88dc2.jpg", broodmare_id: 1)
+foaly = Foal.create(nom_de_muerre: 'rex', sex: "colt", foaling_date: "20221122", color: "bay", markings: "white sock left foreleg", birthplace: "virginia", img_url: "https://s-media-cache-ak0.pinimg.com/564x/bd/66/d5/bd66d5fcaaaee27f7f07356ef0d88dc2.jpg", broodmare_id: 2)
+foaly = Foal.create(nom_de_muerre: 'jim-bob', sex: "colt", foaling_date: "25250525", color: "bay", markings: "white sock left foreleg", birthplace: "cackalacki", img_url: "https://s-media-cache-ak0.pinimg.com/564x/bd/66/d5/bd66d5fcaaaee27f7f07356ef0d88dc2.jpg", broodmare_id: 3)
 # # foal_201702270000L = Foal.create(sex: 'm', foaling_date: now(), color: 'bay', markings: 'red sock left foreleg', birthplace: 'texas', broodmare_id: 1)
 
 p "created #{Stallion.count} stallions"

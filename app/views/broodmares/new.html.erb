@@ -1,15 +1,38 @@
 <h1>Enter a New Broodmare!</h1>
 
 <%= form_for @broodmare do |f| %>
-
+<br>
 <%= f.label :name %>
 <%= f.text_field :name %>
-
+<br>
+<%= f.label :age %>
+<%= f.text_field :age %>
+<br>
+<%= f.label :color %>
+<%= f.text_field :color %>
+<br>
 <%= f.label :img_url %>
 <%= f.text_field :img_url %>
-
-<%= f.label :stallion_id %>
-<%= f.text_field :stallion_id %>
-
+<br>
+<%= f.label :id %>
+<%= f.text_field :id %>
+<br>
+<%#= f.select :stallion, options_for_select(@stallion_names) %>
 <%= f.submit "Submit" %>
+
+
+<!--
+<h2>1. Choose a Line</h2>
+<form class="" action="/new_broodmare" method="get">
+  <select name="stallion">
+<%# @stallion_names.each do |stallion| %>
+<option value=stallion.name>  <%#stallion.id%> </option>
+<%# end %>
+</select>
+  <button type="submit">submit</button>
+</form> -->
+<!-- data_for_select = data.each { |stallion_names| [hash['name'], hash['id']] }
+options_for_select(data_for_select) -->
+
+
 <% end %>

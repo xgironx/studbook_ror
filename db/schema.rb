@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20170227155444) do
     t.string   "color"
     t.string   "markings"
     t.string   "birthplace"
+    t.string   "img_url"
     t.integer  "broodmare_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false

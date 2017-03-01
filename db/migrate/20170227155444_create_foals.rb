@@ -7,6 +7,7 @@ class CreateFoals < ActiveRecord::Migration[5.0]
         t.string :color
         t.string :markings
         t.string :birthplace
+        t.string :img_url
         t.integer   :broodmare_id                               # GIRO:  CHANGED THIS AFTER CONVO W ADRIAN
         # t.references :house, null: false, index:true      # GIRO:  ORIG LINE
         # t.references :post, index: true, foreign_key: true

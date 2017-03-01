@@ -54,7 +54,7 @@ end
                   #GIRO: THIS private FUNCTION IS SHARED THIS MUST COME AT THE END OF THIS File OTHERWISE SAYS MTD METHOD DONT EXIST
 private
 def stallion_params
-params.require(:stallion).permit(:name, :img_url, :stallion_id)
+params.require(:stallion).permit(:name, :img_url, :color, :age, :stud_fee, :stallion_id)
 end
                   #GIRO: THIS private FUNCTION IS SHARED
                   #############################################

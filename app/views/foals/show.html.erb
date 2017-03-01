@@ -1,9 +1,14 @@
-<h1><%= @foal.nom_de_muerre %></h1>
-<p>Color:  <%= @foal.color %></p>
-<p>Foaled:  <%= @foal.foaling_date %></p>
-<p>Broodmare:  <%= @foal.broodmare.name %></p>
-
-    <h1>
-          <%=                                      @foal.nom_de_muerre %>
-          <%= link_to "(edit)", edit_foal_path(@foal)     %>
-    </h1>
+<h1>
+    <%= @foal.nom_de_muerre %>
+    <%= link_to "(edit)", edit_foal_path(@foal) %>
+</h1>
+<p>Color:
+    <%= @foal.color %></p>
+<p>Foaled:
+    <%= @foal.foaling_date %></p>
+<p>Broodmare:
+    <%= @foal.broodmare.name %></p>
+<div class="broodmare"></div>
+  <div class="foal">
+      <%= image_tag (@foal.img_url) %>
+  </div>

@@ -1,23 +1,14 @@
+<h5>
+<%= link_to "Visit our Stallions", broodmares_path %>
+<%= link_to "Visit our Foals", foals_path %></h5>
 
-
-
-
-
-
-
-<h1>Here are the Broodmares</h1>
-
-<%= link_to "New Broodmare", new_broodmare_path %>
-
+<h1>Here are our Broodmares</h1>
+<h4><%= link_to "Git me a new Broodmare", new_broodmare_path %></h4>
+<br>
 <% @broodmares.each do |broodmare| %>
-    <div class="broodmare">
-
-        <br>
-        <div><%= link_to broodmare.name, broodmare_path(broodmare) %>
-            -
-            <%= broodmare.name %>
-      </div>
-        <br>
-        <br>
-    </div>
+<div class="broodmare">
+  <div>  <%= link_to broodmare.id, broodmare_path(broodmare) %>
+  <%= link_to broodmare.name, broodmare_path(broodmare) %>
+  </div>
+</div>
 <% end %>

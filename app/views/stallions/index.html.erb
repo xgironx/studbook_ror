@@ -1,20 +1,17 @@
                   <%# ############################################# %>
                   <%# # 201702221638L     EL MARTES   GIRO %>
+                  <h5>
+                  <%= link_to "Visit our Broodmares", broodmares_path %>
+                  <%= link_to "Visit our Foals", foals_path %></h5>
 <h1>Our Stallions</h1>
 
-<%= link_to "New Stallion", new_stallion_path %>
 
+<h2><%= link_to "I wants me a new Stallion", new_stallion_path %> </h2>
 
 <% @stallions.each do |stallion| %>
     <div class="stallion">
-
-        <br>
-
-        <div><%= link_to stallion.name, stallion_path(stallion) %>
-            -
-            <%= stallion.name %>
+      <div>  <%= link_to stallion.id, stallion_path(stallion) %>
+      <%= link_to stallion.name, stallion_path(stallion) %>
       </div>
-        <br>
-        <br>
     </div>
 <% end %>
