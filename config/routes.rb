@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :broodmares
     resources :foals
 end
-#         Prefix Verb   URI Pattern                    Controller#Action
+# Prefix Verb   URI Pattern                    Controller#Action
 #           root GET    /                              stallions#index
 #      stallions GET    /stallions(.:format)           stallions#index
 #                POST   /stallions(.:format)           stallions#create
@@ -30,3 +30,4 @@ end
 #                PATCH  /foals/:id(.:format)           foals#update
 #                PUT    /foals/:id(.:format)           foals#update
 #                DELETE /foals/:id(.:format)           foals#destroy
+#   Tue Feb 28 12:53:25 ~/Dropbox/3/x/wdi/homework/201703020900L/studbook (x *)

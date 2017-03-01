@@ -1,0 +1,20 @@
+<h2>I want a different color horse, NOW!</h2>
+
+<%= form_for @stallion, method: :put do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :img_url %>
+    <%= f.text_field :img_url %>
+
+
+    <%= f.submit "Change my horsey, NOW!" %>
+
+<%  end %>
+
+
+    <%= form_for @stallion, method: :delete do |f| %>
+    <%#= f.submit "I want a new one, not this old one, NOW!" %>
+    <%= f.submit "I  weary of #{@stallion.name}!  Have him go eat hay!" %>
+<% end %>

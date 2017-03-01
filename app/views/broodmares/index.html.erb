@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 <h1>Here are the Broodmares</h1>
 
 <%= link_to "New Broodmare", new_broodmare_path %>
@@ -6,12 +13,9 @@
     <div class="broodmare">
 
         <br>
-
-        right before link_to broodmare.name
-
         <div><%= link_to broodmare.name, broodmare_path(broodmare) %>
             -
-            <%= broodmare.stallion.name %>
+            <%= broodmare.name %>
       </div>
         <br>
         <br>

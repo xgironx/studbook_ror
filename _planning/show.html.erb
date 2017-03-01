@@ -1,0 +1,7 @@
+<h1><%= @foal.name %></h1>
+
+<h2><%= @foal.broodmare.name %></h2>
+
+<p> <%= @foal.name %> <%= link_to "(edit)", edit_foal_path(@foal) %></p>
+
+<div class="foal"> <%= image_tag @foal.img_url %> </div>

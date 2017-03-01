@@ -1,15 +1,15 @@
-<h1>Your New Foal</h1>
+<h1>Enter a New Foal!</h1>
 
 <%= form_for @foal do |f| %>
 
-<%= f.label :name %>
-<%= f.text_field :name %>
+<%= f.label :nom_de_muerre %>
+<%= f.text_field :nom_de_muerre %>
 
 <%= f.label :img_url %>
 <%= f.text_field :img_url %>
 
-<%= f.label :bloodmare_id %>
-<%= f.text_field :bloodmare_id %>
+<%= f.label :broodmare_id %>
+<%= f.text_field :broodmare_id %>
 
 <%= f.submit "Submit" %>
 <% end %>

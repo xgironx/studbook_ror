@@ -1,4 +1,7 @@
-<% form_for @broodmare, method: :put do |f| %>
+<h2>I want a different color horse, NOW!</h2>
+
+<%= form_for @broodmare, method: :put do |f| %>
+
     <%= f.label :name %>
     <%= f.text_field :name %>
 
@@ -8,10 +11,11 @@
     <%= f.label :stallion_id %>
     <%= f.text_field :stallion_id %>
 
-    <%= f.submit %>
+    <%= f.submit "Change my horsey, NOW!" %>
+
 <%  end %>
 
 
 <%= form_for @broodmare, method: :delete do |f| %>
-    <%= f.submit "Delete" %>
+    <%= f.submit "I want a new one, not this old one, NOW!" %>
 <% end %>

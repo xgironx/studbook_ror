@@ -1,13 +1,10 @@
-<h1><%= @broodmare.name %></h1>
+<h1><%= link_to @broodmare.name, edit_broodmare_path(@broodmare) %></h1>
+<p>Age:  <%= @broodmare.age %></p>
+<p>Color:  <%= @broodmare.color %></p>
+<p>Name: <%= @broodmare.name %> <%= link_to "(edit)", edit_broodmare_path(@broodmare) %></p>
+<p>Stallion:  <%= @broodmare.stallion.name %></p>
+<div                                    class="broodmare">
 
-<h2><%= @broodmare.stallion.name %></h2>
-
-<p> <%= @broodmare.name %> <%= link_to "(edit)", edit_broodmare_path(@broodmare) %></p>
-
-<div class="broodmare">
-
-      <h2><%= @broodmare.name %></h2>
-
-      <%= image_tag (@broodmare.img_url) %>
+      <%= image_tag (                         @broodmare.img_url) %>
 
   </div>

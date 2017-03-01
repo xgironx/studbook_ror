@@ -1,15 +1,11 @@
 
+    <h1>
+          <%=                                      @stallion.name %>
+          <%= link_to "(edit)", edit_stallion_path(@stallion)     %>
+    </h1>
 
-<h1><%= @stallion.name %></h1>
+    <div                                    class="stallion">
 
-    <% @stallion.broodmares.each do |broodmare| %>
+          <%= image_tag (                         @stallion.img_url) %>
 
-      <div class="broodmare">
-
-            <h2><%= broodmare.name %></h2>
-
-            <%= image_tag (broodmare.img_url) %>
-
-        </div>
-
-    <% end %>
+      </div>
