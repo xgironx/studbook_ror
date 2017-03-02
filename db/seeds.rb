@@ -30,13 +30,13 @@ medaglia_d_oro = Stallion.create(name:"Medaglia D'Oro", age:"18", color:"dkb/br"
 
 high_cotton = Stallion.create(name:"High Cotton", age:"14", color:"b", registry_tattoo:"G22340", stud_fee:"4000", stakes_winner_progeny:"3", img_url:"http://www.abouthorseraces.com/graphics/bc06/trav06-7s.jpg", link_to_pedigree_url:"http://www.pedigreequery.com/high+cotton2")
 
-afleet_alex = Stallion.create(name:"Afleet Alex", age:"15", color:"b", registry_tattoo:"F12340", stud_fee:"10000", stakes_winner_progeny:"4", img_url:"http://www.bloodhorse.com/stallion-register/stallions/118658/afleet-alex", link_to_pedigree_url:"http://www.pedigreequery.com/afleet+alex")
+afleet_alex = Stallion.create(name:"Afleet Alex", age:"15", color:"b", registry_tattoo:"F12340", stud_fee:"10000", stakes_winner_progeny:"4", img_url:"http://i.bloodhorse.com/sroimages//medium/0000118658_1.jpg", link_to_pedigree_url:"http://www.pedigreequery.com/afleet+alex")
 
-temple_city = Stallion.create(name:"Temple City", age:"12", color:"dkb/br", registry_tattoo:"F12340", stud_fee:"15000", stakes_winner_progeny:"3", img_url:"http://www.bloodhorse.com/stallion-register/stallions/136098/temple-city", link_to_pedigree_url:"http://www.pedigreequery.com/temple+city")
+temple_city = Stallion.create(name:"Temple City", age:"12", color:"dkb/br", registry_tattoo:"F12340", stud_fee:"15000", stakes_winner_progeny:"3", img_url:"http://i.bloodhorse.com/sroimages//medium/0000136098_1.jpg", link_to_pedigree_url:"http://www.pedigreequery.com/temple+city")
 
-giants_causeway = Stallion.create(name:"Giant's Causeway", age:"20", color:"ch", registry_tattoo:"A12340", stud_fee:"75000", stakes_winner_progeny:"7", img_url:"http://www.bloodhorse.com/stallion-register/stallions/118201/giants-causeway", link_to_pedigree_url:"http://www.pedigreequery.com/giants+causeway")
+giants_causeway = Stallion.create(name:"Giant's Causeway", age:"20", color:"ch", registry_tattoo:"A12340", stud_fee:"75000", stakes_winner_progeny:"7", img_url:"http://i.bloodhorse.com/sroimages//medium/0000118201_1.jpg", link_to_pedigree_url:"http://www.pedigreequery.com/giants+causeway")
 
-kittens_joy = Stallion.create(name:"Kitten's Joy", age:"16", color:"ch", registry_tattoo:"E22340", stud_fee:"100000", stakes_winner_progeny:"7", img_url:"http://www.bloodhorse.com/stallion-register/stallions/131164/kittens-joy", link_to_pedigree_url:"http://www.pedigreequery.com/kittens+joy")
+kittens_joy = Stallion.create(name:"Kitten's Joy", age:"16", color:"ch", registry_tattoo:"E22340", stud_fee:"100000", stakes_winner_progeny:"7", img_url:"http://i.bloodhorse.com/sroimages//medium/0000131164_1.jpg", link_to_pedigree_url:"http://www.pedigreequery.com/kittens+joy")
 
 candy_ride = Stallion.create(name:"Candy Ride", age:"18", color:"b", registry_tattoo:"C22240", stud_fee:"60000", stakes_winner_progeny:"5", img_url:"http://www.bloodhorse.com/stallion-register/stallions/119326/candy-ride-arg", link_to_pedigree_url:"http://www.pedigreequery.com/candy+ride")
 
