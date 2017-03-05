@@ -17,11 +17,14 @@ class BroodmaresController < ApplicationController
 
                                   #############################################
                                   #GIRO: METHODS new AND create work as a pair
-  def new                         #GIRO:    POST   /broodmares(.:format)   broodmares#create
-    @broodmare = Broodmare.new              #GIRO:   http://localhost:3000/broodmares/new
-    @stallion_names = Stallion.all.map do |stallion|
-      [stallion.name, stallion.id]               #returns this value to the map instead of orig val
-    end
+  # def new                         #GIRO:    POST   /broodmares(.:format)   broodmares#create
+  #   @broodmare = Broodmare.new              #GIRO:   http://localhost:3000/broodmares/new
+  #   @stallion_names = Stallion.all.map do |stallion|
+  #     [stallion.name, stallion.id]               #returns this value to the map instead of orig val
+  #   end
+    def new
+      @broodmare = Broodmare.new
+      @stallion_options = Stallion.all.map do |stallion| [stallion.name, stallion.id] end
   end
   def create
     @broodmare = Broodmare.create!(broodmare_params)
@@ -32,10 +35,12 @@ class BroodmaresController < ApplicationController
 
 
 
+
                                 #############################################
                                 #GIRO: METHODS edit AND update work as a pair
 def edit
   @broodmare = Broodmare.find(params[:id])
+  # @stallion_options = Stallion.all.map do |stallion| [stallion.name, stallion.id] end
 end
 def update
   @broodmare = Broodmare.find(params[:id])

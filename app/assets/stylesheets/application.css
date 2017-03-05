@@ -1,27 +1,22 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-h1 {
-  color: #3366cc;
-}
+/* * This is a manifest file that'll be compiled into application.css, which will include all the files * listed below. * * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets, * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path. * * You're free to add application-wide styles to this file and they'll appear at the bottom of the * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS * files in this directory. Styles in this file should be added after the last require_* statement. * It is generally better to create a new file per style scope. * *= require_tree . *= require_self */
+@import url(http://fonts.googleapis.com/css?family=Monoton);
 
-body {
-  background-color: rgba(0, 255, 204,.5);
-  /*background-image:  url(http://www.darbydan.com/Domains/www.darbydan.com/CMSFiles/Photos/PhotoGalleries/Medium/12_14SallysSong_resized2014-2-26-12-19-751.jpg)*/
-}
-/*.stallion {
-  height: 11px;
-  width: 11px;
-}*/
+body { background-color: rgba(0, 255, 204,.5); }
+nav { display: flex; flex-direction: row; justify-content: space-around; border-style: solid red 2px; }
+
+h1 { font-family: Monoton; font-size: 44px; text-align: center; }
+h2 { font-family: Monoton; font-size: 33px; text-align: center; color: rgba(255,0,0,.5) }
+h3 { font-family: Monoton; font-size: 22px; text-align: center; color: rgba(255,0,0,.5) }
+h4 { font-family: Monoton; font-size: 11px; text-align: center; color: rgba(255,0,0,.5) }
+
+.horsePic { align-content: center; }
+
+/*.square   { float: left; width: 10px; height: 10px; background: #E7E5DB; margin: 0; }*/
+
+
+/*.controls                    { text-align: center; }
+.warning                     { text-align: center; color: rgba(0,0,255,.5)   }
+.aLetter, #playersTwoGuess   { text-align: center; font-size; 33px; color: rgba(255, 0,111,1) }
+.guess, .theWord, section    { display: flex; justify-content: space-around;  }
+section                      { display: flex; justify-content: space-around;  }
+section div                  {                                             border-bottom: solid black 2px; }*/

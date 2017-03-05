@@ -14,10 +14,8 @@
 <%= f.label :img_url %>
 <%= f.text_field :img_url %>
 <br>
-<%= f.label :id %>
-<%= f.text_field :id %>
-<br>
-<%#= f.select :stallion, options_for_select(@stallion_names) %>
+<!-- <%= f.select :stallion, options_for_select(@stallion_options) %> -->
+<%= f.select :stallion_id, options_for_select(@stallion_options) %>
 <%= f.submit "Submit" %>
 
 

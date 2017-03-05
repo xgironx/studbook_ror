@@ -8,6 +8,20 @@
   </head>
 
   <body>
+  <header>
+    <nav>
+        <div>
+            <%= link_to "Visit our Stallions", stallions_path %>
+        </div>
+        <div>
+            <%= link_to "Visit our Broodmares", broodmares_path %>
+        </div>
+        <div>
+            <%= link_to "Visit our Foals", foals_path %>
+          <br>
+        </div>
+</nav>
+  </header>
     <%= yield %>
   </body>
 </html>

@@ -1,13 +1,12 @@
-<h1><%= @broodmare.name %></h1>
+<h1><%= @broodmare.name %> </h1>
+<p style="align-content: center"><%= link_to "(edit)", edit_broodmare_path(@broodmare) %></p>
 
-<h2><%= @broodmare.stallion.name %></h2>
+<h4> is in foal to </h4>
 
-<p> <%= @broodmare.name %> <%= link_to "(edit)", edit_broodmare_path(@broodmare) %></p>
+<h3><%= @broodmare.stallion.name %></h3>
 
-<div class="broodmare">
+<p>Age: <%= @broodmare.age %></p>
+<p>Color: <%= @broodmare.color %></p>
+<p>Stallion_id: <%= @broodmare.stallion_id %></p>
 
-      <h2><%= @broodmare.name %></h2>
-
-      <%= image_tag (@broodmare.img_url) %>
-
-  </div>
+<div class="horsePic"> <%= image_tag (@broodmare.img_url) %> </div>

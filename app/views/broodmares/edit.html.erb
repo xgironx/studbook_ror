@@ -1,26 +1,39 @@
-<h2>I want a different color Broodmare, NOW!</h2>
+                      <!-- ########################################### -->
+                      <!-- 201703032100L     EL SABADO   JAY @ FOO -->
+                      <!-- ANDYF SLACKd ME DIFFERENT VERSION OF FORM HELPER -->
+                      <!-- FROM  OPTIONS_FOR_SELECT -->
+                      <%#f.select :stallion_id, options_for_select   (@stallion_options, :include_blank => true) %>
+                      <!-- TO COLLECTION_SELECT -->
+                      <%#                     f.collection_select    (:stallion_id, Stallion.all, :id, :name, prompt: true) %>
+<h5>
+    <div>
+        <%= link_to "Visit our Stallions", stallions_path %>
+    </div>
+    <div>
+        <%= link_to "Visit our Broodmares", broodmares_path %>
+    </div>
+    <div>
+        <%= link_to "Visit our Foals", foals_path %>
+      <br>
+    </div>
+</h5>
+
+<h2>Put some kinda change on my Broodmare, NOW!</h2>
 
 <%= form_for @broodmare, method: :put do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name %>
-
+<br>
     <%= f.label :age %>
     <%= f.text_field :age %>
-
+    <br>
     <%= f.label :color %>
     <%= f.text_field :color %>
-
+    <br>
     <%= f.label :img_url %>
     <%= f.text_field :img_url %>
-
-    <%= f.label :stallion_id %>
-    <%= f.text_field :stallion_id %>
-
+    <br>
+    <%= f.collection_select(:stallion_id, Stallion.all, :id, :name, prompt: true) %>  <!-- Andy F helped me here -->
     <%= f.submit "Change my horsey, NOW!" %>
+    <% @broodmare.save %>
 <%  end %>
-
-    <br>
-    <br>
-<%= form_for @broodmare, method: :delete do |f| %>
-    <%= f.submit "I want a new Broodmare, delete this old one, NOW!" %>
-<% end %>

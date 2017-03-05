@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.2.5'
+# ruby '2.4.0'
 # ruby '2.2.6'
                   ##########################################
                   #201703011333L   EL MIERCOLES   JAY
