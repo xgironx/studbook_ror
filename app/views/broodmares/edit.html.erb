@@ -33,7 +33,7 @@
     <%= f.label :img_url %>
     <%= f.text_field :img_url %>
     <br>
-    <%= f.collection_select(:stallion_id, Stallion.all, :id, :name, prompt: true) %>  <!-- Andy F helped me here -->
+    <%= f.collection_select(:stallion_id, Stallion.all, :id, :name, prompt: true) %>  <!-- Nice work here! -->
     <%= f.submit "Change my horsey, NOW!" %>
     <% @broodmare.save %>
 <%  end %>

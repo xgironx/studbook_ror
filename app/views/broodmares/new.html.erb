@@ -14,20 +14,20 @@
 <%= f.label :img_url %>
 <%= f.text_field :img_url %>
 <br>
-<!-- <%= f.select :stallion, options_for_select(@stallion_options) %> -->
+<!-- You could also use collection_select here, as you know :) -->
 <%= f.select :stallion_id, options_for_select(@stallion_options) %>
 <%= f.submit "Submit" %>
-
+<!-- remove unused comments -->
 
 <!--
 <h2>1. Choose a Line</h2>
 <form class="" action="/new_broodmare" method="get">
-  <select name="stallion">
+<select name="stallion">
 <%# @stallion_names.each do |stallion| %>
 <option value=stallion.name>  <%#stallion.id%> </option>
 <%# end %>
 </select>
-  <button type="submit">submit</button>
+<button type="submit">submit</button>
 </form> -->
 <!-- data_for_select = data.each { |stallion_names| [hash['name'], hash['id']] }
 options_for_select(data_for_select) -->
